@@ -1,0 +1,37 @@
+/* Estilos para la tarjeta de cita */
+.quote-card {
+  background-color: #ebe0e1; /* Color rojizo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interior */
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  text-align: center; /* Texto centrado */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Estilos para el icono de corazón */
+.fa-heart {
+  color: #dc3545; /* Color rojo oscuro */
+  font-size: 2rem; /* Tamaño del icono */
+}
+
+/* Estilos para el título */
+.quote-title {
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-top: 10px; /* Espacio arriba del título */
+  margin-bottom: 20px; /* Espacio abajo del título */
+}
+
+/* Estilos para el bloque de la cita */
+.blockquote {
+  font-size: 1.2rem; /* Tamaño del texto de la cita */
+  font-style: italic; /* Texto en cursiva */
+  margin-bottom: 1rem; /* Espacio inferior */
+}
+
+/* Estilos para el pie de la cita */
+.blockquote-footer {
+  font-size: 1rem; /* Tamaño del texto del pie de la cita */
+  font-weight: bold; /* Texto en negrita */
+  color: #6c757d; /* Color gris oscuro */
+}

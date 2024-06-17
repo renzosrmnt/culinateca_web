@@ -1,0 +1,25 @@
+<div class="new-recipes container pt-5">
+    <h2 class="text-center">RECOMENDACIONES</h2>
+    <p class="text-center">Dejate sorprender y descubre una receta que te encantará.</p>
+    <div class="row row-cols-1 row-cols-md-5 g-3 my-5">
+        @for(recipe of recipes; track recipe._id) {
+
+        <div class="col">
+            <a href="#" class="card-link">
+          <div class="card text-bg-danger h-100">
+            <img [src]="recipe?.imageUrl" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ recipe.title }}</h5>
+              <p class="card-text">{{ recipe.description }}</p>
+            </div>
+            <div class="card-footer ">
+              <small class="text-body-secondary"> <i class="fa-solid fa-clock"></i> {{ recipe.preparationTime }}</small>
+            </div>
+          </div></a>
+        </div>
+
+        }
+    
+      </div>
+    
+</div>

@@ -1,0 +1,21 @@
+.banner-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: red;
+  }
+
+.img-banner{
+  height: 200px;
+}
+
+.titulo-banner{
+  font-size: 5em;
+}
+
+.text-banner{
+  text-align: end;
+}
+
+
+  

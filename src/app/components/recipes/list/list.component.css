@@ -1,0 +1,8 @@
+.card-link{
+    text-decoration: none;
+}
+
+::ng-deep .mat-paginator-page-size-label {
+    display: none; /* Ocultar el texto "Items per page" */
+  }
+  

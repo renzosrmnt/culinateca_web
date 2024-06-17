@@ -1,0 +1,39 @@
+.navbar-brand {
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px; /* Ajusta según sea necesario */
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #e63946; /* Rojo */
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #c53030; /* Un rojo más oscuro al pasar el cursor */
+}
+
+.list-inline-item a {
+  color: #000; /* Color inicial */
+  font-weight: normal;
+  transition: color 0.3s;
+  cursor: pointer; /* Mostrar la manito */
+  text-decoration: none;
+}
+
+.list-inline-item a:hover {
+  color: #e63946; /* Rojo al pasar el cursor */
+}
+
+.text-muted {
+  font-size: 0.875rem; /* Texto más pequeño */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

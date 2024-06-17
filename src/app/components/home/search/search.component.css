@@ -1,0 +1,41 @@
+.search-section {
+  background-image: url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.75); /* Fondo blanco translúcido */
+  border: none; /* Sin borde */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+.form-control {
+  border-radius: 30px 0 0 30px;
+}
+
+.btn-outline-danger {
+  border-radius: 0 30px 30px 0;
+}
+
+.input-group .form-control {
+  border-right: 0;
+}
+
+.input-group .form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+.input-group .input-group-append .btn {
+  border-left: 0;
+}
+
+@media (max-width: 575.98px) {
+  .form-inline {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
