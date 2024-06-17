@@ -5,7 +5,7 @@
         @for(recipe of recipes; track recipe._id) {
 
         <div class="col">
-            <a href="#" class="card-link">
+            <a [routerLink]="['/recipe', recipe._id]" class="card-link">
           <div class="card text-bg-danger h-100">
             <img [src]="recipe?.imageUrl" class="card-img-top" alt="...">
             <div class="card-body">

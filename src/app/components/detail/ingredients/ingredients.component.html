@@ -1,0 +1,12 @@
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fa-solid fa-basket-shopping"></i> Ingredientes</h5>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of ingredients">
+        <input type="checkbox" /> {{ ingredient }}
+      </li>
+    </ul>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+@if(recipe){
+<div>
+  <app-presentation [recipe]="recipe"></app-presentation>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <app-ingredients [ingredients]="recipe.ingredients"></app-ingredients>
+      </div>
+      <div>
+        <app-preparation [steps]="recipe.steps"></app-preparation>
+      </div>
+    </div>
+  </div>
+</div>
+}

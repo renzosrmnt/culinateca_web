@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../../../services/recipes/recipe';
 import { RecipeService } from '../../../services/recipes/recipe.service';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [MatPaginatorModule],
+  imports: [MatPaginatorModule, RouterLink],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
 })
