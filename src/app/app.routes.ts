@@ -4,6 +4,7 @@ import { RecipesComponent } from './components/recipes/recipes.component';
 import { AboutComponent } from './components/about/about.component';
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { ResultsComponent } from './components/results/results.component';
 
 
 
@@ -28,7 +29,14 @@ export const routes: Routes = [
         title: 'Sugerencías',
         component: SuggestionsComponent,
     },
-    {   path: 'recipe/:id',
-        title: 'Descubre',
-        component: DetailComponent },
+    {
+        path: 'recipe/:id',
+        title: '¡A cocinar!',
+        component: DetailComponent
+    },
+    {
+        path: 'results',
+        title: 'Resultados',
+        component: ResultsComponent
+    },
 ];

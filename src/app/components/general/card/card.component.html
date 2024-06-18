@@ -1,0 +1,14 @@
+<a [routerLink]="['/recipe', recipe._id]" class="card-link">
+  <div class="card text-bg-danger h-100">
+    <img [src]="recipe.imageUrl" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ recipe.title }}</h5>
+      <p class="card-text">{{ recipe.description }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">
+        <i class="fa-solid fa-clock"></i> {{ recipe.preparationTime }}</small
+      >
+    </div>
+  </div>
+</a>

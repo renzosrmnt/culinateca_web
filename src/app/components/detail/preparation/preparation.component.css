@@ -1,0 +1,38 @@
+/* src/app/components/recipes/preparation/preparation.component.css */
+
+/* Estilos para el checkbox */
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: red;
+    border-color: red;
+  }
+  
+  /* Estilos para el texto del paso */
+  .list-group-item .step-text {
+    flex-grow: 1;
+    transition: text-decoration 0.3s;
+  }
+  
+  /* Estilos para el texto del paso cuando el checkbox está marcado */
+  .list-group-item .custom-checkbox:checked + .step-text {
+    text-decoration: line-through;
+  }
+  
+  /* Asegurar que el texto del paso ocupe toda la línea */
+  .list-group-item {
+    display: flex;
+    align-items: center;
+  }
+  

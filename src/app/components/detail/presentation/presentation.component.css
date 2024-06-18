@@ -1,0 +1,14 @@
+/* Ajusta el espacio entre los elementos */
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+  }
+  
+  .d-flex small {
+    margin-right: 15px; /* Espacio entre los iconos y el texto */
+  }
+  
+  .d-flex small:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }

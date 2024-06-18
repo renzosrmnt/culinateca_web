@@ -1,6 +1,6 @@
 
 <div class="container mt-5">
-<div class="card mb-3" style="max-width: fit-content;">
+<div class="card mb-3 text-bg-danger" style="max-width: fit-content;">
   <div class="row g-0">
     <div class="col-md-4">
       <img [src]="recipe?.imageUrl" class="img-fluid rounded-start" alt="...">
@@ -8,10 +8,10 @@
     <div class="col-md-8">
       <div class="card-body">
         <h1 class="card-title">{{ recipe?.title }}</h1>
-        <p class="card-text">{{ recipe?.description }}</p>
-        <p class="card-text"><small class="text-body-secondary">{{ recipe?.preparationTime }}</small><span>
-          <small class="text-body-secondary">{{ recipe?.servingSize }}</small>
-        </span></p>
+        <h5 class="card-text">{{ recipe?.description }}</h5>
+        <h6 class="card-text"><small class="text-body-secondary"> <i class="fa-solid fa-clock"></i> {{ recipe?.preparationTime }} - </small> <span>
+          <small class="text-body-secondary"> <i class="fa-solid fa-utensils"></i> {{ recipe?.servingSize }}</small>
+        </span></h6>
       </div>
     </div>
   </div>

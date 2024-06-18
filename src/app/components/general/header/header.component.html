@@ -18,16 +18,18 @@
           <a class="nav-link" routerLink="/suggestions">Sugerencias</a>
         </li>
       </ul>
-      <form class="form-inline ml-auto">
+
+      <form class="form-inline ml-auto" (submit)="onSearchSubmit(searchInput)">
         <div class="input-group">
-          <input class="form-control border-right-0 rounded-left" type="search" placeholder="Buscar" aria-label="Buscar">
+          <input #searchInput class="form-control border-right-0 rounded-left" type="text" placeholder="Buscar recetas..." aria-label="Buscar">
           <div class="input-group-append">
-            <button class="btn btn-outline-danger rounded-right" type="submit">
+            <button type="submit" class="btn btn-outline-danger rounded-right">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
         </div>
       </form>
+      
     </div>
   </div>
 </nav>

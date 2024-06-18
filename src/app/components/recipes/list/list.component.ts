@@ -3,13 +3,14 @@ import { Recipe } from '../../../services/recipes/recipe';
 import { RecipeService } from '../../../services/recipes/recipe.service';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { RouterLink } from '@angular/router';
+import { CardComponent } from "../../general/card/card.component";
 
 @Component({
-  selector: 'app-list',
-  standalone: true,
-  imports: [MatPaginatorModule, RouterLink],
-  templateUrl: './list.component.html',
-  styleUrl: './list.component.css',
+    selector: 'app-list',
+    standalone: true,
+    templateUrl: './list.component.html',
+    styleUrl: './list.component.css',
+    imports: [MatPaginatorModule, RouterLink, CardComponent]
 })
 
 export class ListComponent implements OnInit {

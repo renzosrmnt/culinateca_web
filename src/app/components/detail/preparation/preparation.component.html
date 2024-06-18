@@ -1,9 +1,12 @@
-<div class="card mb-4">
+<!-- src/app/components/recipes/preparation/preparation.component.html -->
+
+<div class="card border-light mb-3 mb-4">
   <div class="card-body">
     <h5 class="card-title"><i class="fa-solid fa-fire-burner"></i> Preparación</h5>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let step of steps">
-        <input type="checkbox" /> {{ step }}
+        <input type="checkbox" class="form-check-input custom-checkbox me-2" />
+        <span class="step-text">{{ step }}</span>
       </li>
     </ul>
   </div>

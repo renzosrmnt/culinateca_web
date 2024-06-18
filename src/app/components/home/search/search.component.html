@@ -5,14 +5,16 @@
         <h1>¿Qué te gustaría cocinar?</h1>
         <p>Descubre muchas recetas deliciosas de todas partes del mundo.</p>
         <div class="search-bar mx-auto mt-3">
-          <div class="input-group">
-            <input class="form-control border-right-0 rounded-left" type="search" placeholder="Buscar recetas...">
-            <div class="input-group-append">
-              <button class="btn btn-outline-danger rounded-right" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+          <form (ngSubmit)="onSearch()">
+            <div class="input-group">
+              <input [(ngModel)]="query" name="query" required class="form-control border-right-0 rounded-left" type="search" placeholder="Buscar recetas...">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-outline-danger rounded-right">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

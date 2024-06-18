@@ -66,4 +66,14 @@ export class RecipeService {
       })
     );
   }
+
+  searchRecipesByTitle(title: string): Observable<Recipe[]> {
+    return this.http.get<Recipe[]>(`${this.baseUrl}/search?title=${title}`).pipe(
+      catchError((error) => {
+        console.error('Error fetching all recipes:', error);
+        return of([] as Recipe[]);
+      })
+    );
+  }
+
 }
