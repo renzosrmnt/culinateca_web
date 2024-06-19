@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { BannerComponent } from "../general/banner/banner.component";
+import { FormComponent } from "./form/form.component";
 
 @Component({
     selector: 'app-suggestions',
     standalone: true,
     templateUrl: './suggestions.component.html',
     styleUrl: './suggestions.component.css',
-    imports: [BannerComponent]
+    imports: [BannerComponent, FormComponent]
 })
 export class SuggestionsComponent {
 

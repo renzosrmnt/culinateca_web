@@ -11,10 +11,12 @@
 
 .titulo-banner{
   font-size: 5em;
+  font-weight: bold;
 }
 
 .text-banner{
   text-align: end;
+  font-weight: 500;
 }
 
 

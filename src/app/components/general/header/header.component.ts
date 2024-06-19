@@ -1,22 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { SearchService } from '../../../services/search.service';
+import { Router, RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, FormsModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 
-  constructor(private searchService: SearchService) {}
+  query: string = '';
 
-  onSearchSubmit(searchInput: HTMLInputElement) {
-    const query = searchInput.value.trim();
-    if (query) {
-      this.searchService.searchRecipes(query);
+  constructor(private router: Router) { }
+
+  onSearch() {
+    if (this.query) {
+      this.router.navigate(['/results'], { queryParams: { search: this.query } });
+      this.query = '';
     }
   }
 
