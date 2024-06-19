@@ -1,1 +1,33 @@
-<p>form works!</p>
+<div class="container my-5">
+    @if(showAlert){
+    <div class="alert alert-success my-3" role="alert">
+        ¡Su mensaje fue enviado con éxito!
+    </div>
+    }
+    <form [formGroup]="suggestionForm" (ngSubmit)="onSubmit()">
+
+        <h3 class="text-center form-title my-2">COMPLETA EL FORMULARIO</h3>
+
+        <div class="form-floating my-3">
+            <select id="type" formControlName="type" class="form-select">
+              <option value="">--Selecciona--</option>
+              <option value="report">Reporte</option>
+              <option value="recommendation">Recomendación</option>
+              <option value="request">Solicitud</option>
+            </select>
+            <label for="type">Tipo de mensaje</label>
+          </div>
+
+        <div class="form-floating mb-3">
+            <input id="title" formControlName="title" type="text" class="form-control"
+                placeholder="Escribe un título" />
+            <label for="title">Escribe un título</label>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea id="message" formControlName="message" class="form-control" placeholder="Escribe tu mensaje"
+                style="height: 150px"></textarea>
+            <label for="message">Escribe tu mensaje</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+    </form>
+</div>

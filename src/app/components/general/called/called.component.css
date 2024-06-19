@@ -1,0 +1,31 @@
+.search-section {
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+.card {
+    background-color: #f9f9f9;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #e60000;
+}
+
+.btn-danger {
+    background-color: #e60000;
+    border-color: #e60000;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.card-img{
+    max-height: auto;
+    max-width: 600px;
+}
